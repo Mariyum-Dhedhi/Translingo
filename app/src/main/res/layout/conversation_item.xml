@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+
+    <View
+        android:id="@+id/block"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/bg_flag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/block"
+        app:layout_constraintEnd_toEndOf="@+id/block"
+        app:layout_constraintStart_toStartOf="@+id/block"
+        app:layout_constraintTop_toTopOf="@+id/block"></View>
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="@+id/block"
+        app:layout_constraintStart_toStartOf="@+id/block"
+        app:layout_constraintTop_toTopOf="@+id/block" />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/block"
+        app:layout_constraintEnd_toEndOf="@+id/block"
+        app:layout_constraintStart_toStartOf="@+id/block"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomeActivity"
+    android:background="@color/grey">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="169dp"/>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/bg_language_boxes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"></View>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/bg_whitecircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"></View>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Looking for Translating?"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sourceText"
+        android:layout_width="312dp"
+        android:layout_height="120dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:gravity="top|left"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.44"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="408dp"
+        android:background="@drawable/bg_language_boxes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"></View>
+
+    <TextView
+        android:id="@+id/destinationText"
+        android:layout_width="302dp"
+        android:layout_height="120dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <ImageView
+        android:id="@+id/favouriteIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_favourite"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.937"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_save"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.937"
+        tools:ignore="ImageContrastCheck" />
+
+    <View
+        android:id="@+id/paste"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_paste"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.935" />
+
+    <View
+        android:id="@+id/mic"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/bg_mic"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paste"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/paste"
+        app:layout_constraintEnd_toEndOf="@+id/paste"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/paste"
+        app:layout_constraintTop_toTopOf="@+id/paste" />
+
+    <ImageView
+        android:id="@+id/sourceSpeaker"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_speaker"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.11"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_language_button"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        android:textColor="@color/black"
+        android:text="From"
+        android:gravity="center"></TextView>
+
+    <TextView
+        android:id="@+id/destinationIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.110000014"></TextView>
+
+    <TextView
+        android:id="@+id/sourceIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.110000014"></TextView>
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_translation_arrows"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/toLanguage"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_language_button"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.50"
+        android:textColor="@color/black"
+        android:text="To"
+        android:gravity="center"></TextView>
+
+    <ImageView
+        android:id="@+id/destinationSpeaker"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_speaker"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_paste"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/paste"
+        app:layout_constraintEnd_toEndOf="@+id/paste"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/paste"
+        app:layout_constraintTop_toTopOf="@+id/paste" />
+
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_mic"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/mic"
+        app:layout_constraintEnd_toEndOf="@+id/mic"
+        app:layout_constraintStart_toStartOf="@+id/mic"
+        app:layout_constraintTop_toTopOf="@+id/mic" />
+
+    <TextView
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/bg_gradient"
+        android:gravity="left|center"
+        android:paddingLeft="50dp"
+        android:text="Language Translator"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/dots"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/ic_3_dots"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="70dp"
+        android:layout_height="13dp"
+        android:gravity="center"
+        android:text="Translate"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:drawableTop="@drawable/ic_history"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="History"
+        android:onClick="history"
+        android:textColor="@color/black"
+        android:drawableTint="@color/grey"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+    <ImageView
+        android:id="@+id/copy"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_copy"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.937"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/favouritesView"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:drawableTop="@drawable/ic_fill_favourite"
+        android:gravity="center"
+        android:onClick="favourites"
+        android:layout_marginTop="5dp"
+        android:text="Favourites"
+        android:textColor="@color/black"
+        android:drawableTint="@color/grey"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/conversation"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:drawableTop="@drawable/ic_mic"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Conversation"
+        android:textColor="@color/black"
+        android:drawableTint="@color/grey"
+        android:textSize="10dp"
+        android:onClick="conversion"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:drawableTop="@drawable/ic_camera"
+        android:gravity="center"
+        android:onClick="camera"
+        android:layout_marginTop="5dp"
+        android:text="Camera"
+        android:textColor="@color/black"
+        android:drawableTint="@color/grey"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <View
+        android:id="@+id/viewM"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/bg_mic"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_mic"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/mic"
+        app:layout_constraintEnd_toEndOf="@+id/mic"
+        app:layout_constraintStart_toStartOf="@+id/mic"
+        app:layout_constraintTop_toTopOf="@+id/mic" />
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/logo"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/viewM"
+        app:layout_constraintEnd_toEndOf="@+id/viewM"
+        app:layout_constraintStart_toStartOf="@+id/viewM"
+        app:layout_constraintTop_toTopOf="@+id/viewM"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
